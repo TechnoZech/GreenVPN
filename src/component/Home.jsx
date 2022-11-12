@@ -1,4 +1,6 @@
 import React from "react";
+import SendIcon from '@mui/icons-material/Send';
+import AppleIcon from '@mui/icons-material/Apple';
 
 function Home(){
     return(
@@ -11,8 +13,9 @@ function Home(){
                         </h1>
 
                         <div className="home_btns">
-                            <button type="button" class="btn home_btn1">Download</button>
-                            <button type="button" class="btn home_btn2">Download</button>
+                    
+                            <button type="button" class="btn home_btn1"><SendIcon className="btn_icon"/> Download</button>
+                            <button type="button" class="btn home_btn2"><AppleIcon className="btn_icon"/> Download</button>
                         </div>
                     </div>
                     

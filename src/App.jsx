@@ -3,6 +3,9 @@ import Home from "./component/Home.jsx";
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Contact from "./component/Contact.jsx";
 import Navbar from "./component/Navbar.jsx";
+import Features from "./component/Features.jsx";
+import Features2 from "./component/Features2.jsx";
+import Deal from "./component/Deal.jsx";
 
 function App() {
   return (
@@ -16,6 +19,10 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path ='*' element={<Home />} />
       </Routes>
+
+      <Features />
+      <Features2 />
+      <Deal />
       
     </Router>
   );
