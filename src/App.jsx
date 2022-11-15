@@ -6,6 +6,8 @@ import Navbar from "./component/Navbar.jsx";
 import Features from "./component/Features.jsx";
 import Features2 from "./component/Features2.jsx";
 import Deal from "./component/Deal.jsx";
+import Testimonials from "./component/Testimonials.jsx";
+import Faq from "./component/Faq.jsx";
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
       <Features />
       <Features2 />
       <Deal />
+      <Testimonials />
+      <Faq />
+  
       
     </Router>
   );

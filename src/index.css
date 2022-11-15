@@ -198,7 +198,6 @@
   padding: 100px 0;
 }
 
-
 .deal_h1{
   font-weight: bold;
   font-size: 4rem !important;
@@ -229,17 +228,124 @@
   background: #008037 !important;
 }
 
+.deal_btn_timer{
+  color: #ffffff !important;
+  font-size: 20px !important;
+  padding: 3px 20px !important;
+  margin-left: 50px;
+  text-decoration: none;
+  border: 2px solid #fff !important;
+  border-radius: 10px !important;
+  background: #5EC57E !important;
+}
+
 .deal_btn:hover{
   color: #fff !important;
   background: #347571 !important;
 }
 
-.deal_83_gif{
-  height: 500px;
-  width: 500px;
+
+.deal_animation{
+  font-size: 12rem;
+  font-weight: bold;
 }
 
-.deal_off_gif{
+.deal_animation ul{
+  display: flex;
+  letter-spacing: 0.5rem;
   height: 200px;
-  width: 200px;
+
+}
+
+.deal_animation ul li{
+  list-style: none;
+  color: #5EC57E;
+  animation: light 1.3s linear infinite;
+}
+
+@keyframes light{
+  0%{
+    color: #5EC57E;
+    text-shadow: none;
+  }
+  90%{
+    color: #5EC57E;
+    text-shadow: none;
+  }
+  100%{
+    color: #008037;
+    text-shadow: 0 0 1rem #008037, 0 0 7rem #5EC57E;
+  }
+}
+
+.deal_animation ul li:nth-child(1){
+  animation-delay: 0s;
+}
+.deal_animation ul li:nth-child(2){
+  animation-delay: 0.1s;
+}
+.deal_animation ul li:nth-child(3){
+  animation-delay: 0.2s;
+}
+
+.off{
+  padding-left: 350px;
+  margin-top: 0px;
+  font-size: 6rem;
+}
+
+/* <----------------------   Testimonials CSS    -------------------------> */
+
+.Testimonials{
+  background-color: #DCF4CE;
+}
+
+.Testimonials h1{
+  color: #008037;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.Testimonials p{
+  color: #008037;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.tweets{
+  padding-bottom: 100px !important;
+}
+
+/* <----------------------   FAQ CSS    -------------------------> */
+
+.faq_title{
+  color: #008037;
+  font-weight: bolder !important;
+  font-size: 3.5rem;
+  padding-top: 100px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.accordion-button{
+  background-color: #B8E28A !important;
+  color: #008037 !important;
+  font-size: 1.5rem !important;
+  font-weight: bold;
+}
+
+.faq_accordion{
+  padding-bottom: 100px;
+  padding-left: 200px !important;
+  padding-right: 200px !important;
+}
+
+.accordion-item{
+  margin-bottom: 30px;
+}
+
+.accordion-body{
+  background-color: #DCF4CE;
+  font-size: 1rem !important;
 }

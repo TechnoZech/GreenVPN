@@ -7,7 +7,7 @@ function Deal(){
         <section>
             <div className="container">
                 <div className="row deal">
-                    <div className="col-6">
+                    <div className="col-6 deal_left">
                         <h1 className="deal_h1">Black Friday deal: <br/> 83% off</h1>
                         <h2 className="deal_h2">+3 months free</h2>
                         <div className="deal_list">
@@ -16,14 +16,34 @@ function Deal(){
                             <h4><CheckIcon /> Lightning-quick connectivity</h4>
                         </div>
                         <button type="button" class="btn deal_btn">Grab the Deal</button>
-                        <Timer />
+                        <button type="button" class="btn deal_btn_timer"><Timer /></button>
                     </div>
                     <div className="col-6">
-                        <div>
-                            <img  className="deal_83_gif" src={require("../images/83.gif")} alt="83%" />
+                        <div className="deal_animation">
+                            <ul>
+                                <li>
+                                    8
+                                </li>
+                                <li>
+                                    3
+                                </li>
+                                <li>
+                                    %
+                                </li>
+                            </ul>
                         </div>
-                        <div>
-                            <img  className="deal_off_gif" src={require("../images/off.gif")} alt="off" />
+                        <div className="deal_animation off">
+                            <ul>
+                                <li>
+                                    o
+                                </li>
+                                <li>
+                                    f
+                                </li>
+                                <li>
+                                    f
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

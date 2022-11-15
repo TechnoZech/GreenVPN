@@ -7,7 +7,7 @@ import LockOpenIcon from '@mui/icons-material/LockOpen';
 function Features2(){
     return(
         <section className="features_2">
-            <div className="container ">
+            <div className="container">
                 <div className="row">
 
                     <div className="row">
