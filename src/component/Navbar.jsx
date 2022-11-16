@@ -1,11 +1,11 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import ParkIcon from '@mui/icons-material/Park';
-
+import { Link } from "react-scroll";
 function Navbar(){
     return(
 
-            <div className="container-fluid nav_bg">
+            <div className="container-fluid nav_bg fixed-top">
                 <div className="row">
                     <div className="col-10 mx-auto">
 
@@ -19,11 +19,12 @@ function Navbar(){
                             <ul className="navbar-nav mb-2 mb-lg-0 col-3 mx-auto">
                                 
                                 <li className="nav-item">
-                                <NavLink  className="nav-link" to="/contact">Support</NavLink>
+                                <NavLink  className="nav-link" to="/support">Support</NavLink>
                                 </li>
 
                                 <li className="nav-item">
-                                <NavLink  className="nav-link" to="#">Features</NavLink>
+                                {/* <NavLink  className="nav-link" to="features">Features</NavLink> */}
+                                    <Link  className="nav-link" to="features" duration={50} smooth={true}>Features</Link>
                                 </li>
 
                                 <li className="nav-item">

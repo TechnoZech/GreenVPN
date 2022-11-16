@@ -5,7 +5,7 @@ import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
 
 function Features(){
     return(
-        <div className="container">
+        <div className="container" id="features">
             <div className="row">
                 <div className="col-12">
                     <h1 className="features_heading">Why Green VPN</h1>

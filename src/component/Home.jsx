@@ -2,9 +2,20 @@ import React from "react";
 import SendIcon from '@mui/icons-material/Send';
 import AppleIcon from '@mui/icons-material/Apple';
 
+import Navbar from "./Navbar";
+import Features from "./Features.jsx";
+import Features2 from "./Features2.jsx";
+import Deal from "./Deal.jsx";
+import Testimonials from "./Testimonials.jsx";
+import Faq from "./Faq.jsx";
+import Footer from "./Footer.jsx";
+
 function Home(){
     return(
+        <div>
+        <Navbar />
         <section className="section_home">
+        
         <div className="container home">
             <div className="row">
                     <div className="col-6">
@@ -26,7 +37,15 @@ function Home(){
                 </div>
 
             </div>
+            
         </section>
+            <Features />
+            <Features2 />
+            <Deal />
+            <Testimonials />
+            <Faq />
+            <Footer />
+        </div>
     ); 
 }
 
