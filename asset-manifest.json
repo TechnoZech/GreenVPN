@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/GreenVPN/static/css/main.bd1ff162.css",
+    "main.js": "/GreenVPN/static/js/main.c6580c96.js",
+    "static/media/vpnmobile.png": "/GreenVPN/static/media/vpnmobile.d262efee313907abead4.png",
+    "index.html": "/GreenVPN/index.html",
+    "main.bd1ff162.css.map": "/GreenVPN/static/css/main.bd1ff162.css.map",
+    "main.c6580c96.js.map": "/GreenVPN/static/js/main.c6580c96.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd1ff162.css",
+    "static/js/main.c6580c96.js"
+  ]
+}
