@@ -1,6 +1,7 @@
 import React from "react";
 import CheckIcon from '@mui/icons-material/Check';
 import Timer from "../component/Timer";
+import { NavLink } from "react-router-dom";
 
 function Deal(){
     return(
@@ -15,7 +16,9 @@ function Deal(){
                             <h4><CheckIcon /> Secure access, worldwide</h4>
                             <h4><CheckIcon /> Lightning-quick connectivity</h4>
                         </div>
-                        <button type="button" class="btn deal_btn">Grab the Deal</button>
+                       
+                        <button type="button" className="deal_btn_btn"><a class="btn deal_btn" href="/price">Grab the Deal</a></button>
+            
                         <button type="button" class="btn deal_btn_timer"><Timer /></button>
                     </div>
                     <div className="col-6">

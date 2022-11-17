@@ -25,8 +25,23 @@ function Home(){
 
                         <div className="home_btns">
                     
-                            <button type="button" class="btn home_btn1"><SendIcon className="btn_icon"/> Download</button>
-                            <button type="button" class="btn home_btn2"><AppleIcon className="btn_icon"/> Download</button>
+                            {/* <button type="button" class="btn home_btn1"><SendIcon className="btn_icon"/> Download</button> */}
+                           
+                                <a href="https://play.google.com/store/apps/details?id=com.fivetime.greenvpn" target="_blank">
+                                    <button className="btn home_btn1" type="button">
+                                    <SendIcon className="btn_icon"/> Download
+                                    </button>
+                                </a>
+
+                            {/* <button type="button" class="btn home_btn2"><AppleIcon className="btn_icon"/> Download</button> */}
+
+
+                            <a href="https://apps.apple.com/app/id1542123105" target="_blank">
+                                    <button className="btn home_btn1" type="button">
+                                    <AppleIcon className="btn_icon"/> Download
+                                    </button>
+                            </a>
+
                         </div>
                     </div>
                     

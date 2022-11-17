@@ -50,6 +50,11 @@
 }
 
 
+.nav_btn_btn{
+  border: none;
+  background-color: #0000;
+}
+
 /* <----------------------   Home CSS    -------------------------> */
 
 .section_home{
@@ -58,7 +63,7 @@
 
 .home{
   color: #347571;
-  padding: 50px 0 50px 40px !important;
+  padding: 100px 0 50px 40px !important;
 }
 
 .home_txt{
@@ -196,7 +201,7 @@
 /* <----------------------   Deal CSS    -------------------------> */
 
 .deal{
-  padding: 100px 0;
+  padding: 100px 50px;
 }
 
 .deal_h1{
@@ -227,8 +232,13 @@
   border: 2px solid #fff !important;
   border-radius: 50px !important;
   background: #008037 !important;
+
 }
 
+.deal_btn_btn{
+  border: none;
+  background-color: #fff;
+}
 .deal_btn_timer{
   color: #ffffff !important;
   font-size: 20px !important;
@@ -299,6 +309,7 @@
 
 .Testimonials{
   background-color: #DCF4CE;
+ 
 }
 
 .Testimonials h1{
@@ -316,6 +327,8 @@
 
 .tweets{
   padding-bottom: 100px !important;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /* <----------------------   FAQ CSS    -------------------------> */
@@ -374,7 +387,7 @@ footer h2{
 .footer_links{
   list-style-type: none !important;
   margin-bottom: 50px;
-
+  cursor: pointer;
 }
 
 .footer_link_heading{
@@ -407,9 +420,6 @@ footer a{
   background-color: #008037;
 }
 
-
-
-
 .footer_rights{
   background-color: #35B276;
   color: #ffff;
@@ -417,6 +427,11 @@ footer a{
   position: absolute;
   left: 12px;
   width: 100%;
+}
+
+.footer_social_icon{
+  margin-right: 3px;
+  margin-bottom: 1px;
 }
 
 .footer_rights_p{
@@ -482,4 +497,119 @@ footer a{
 .support_btn:hover{
   color: #fff;
   background-color: #000;
+}
+
+/* <----------------------   Price CSS    -------------------------> */
+
+section.pricing {
+  background: #fff;
+  /* color: #fff; */
+  
+}
+
+.price_card{
+  background-color: #B8E28A !important;
+}
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  color: #000 !important;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+
+.price_btn{
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+
+/* <----------------------   Privacy CSS    -------------------------> */
+
+.privacy{
+  background-color: #5ec57e;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.privacy h1{
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/* <----------------------   Terms CSS    -------------------------> */
+
+.terms{
+  background-color: #5ec57e;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.terms h1{
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.active{
+  /* color: #B8E28A;
+  background-color: #B8E28A; */
+  font-weight: bold !important;
 }

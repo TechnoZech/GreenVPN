@@ -4,7 +4,8 @@ import AppleIcon from '@mui/icons-material/Apple';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-// import TwitterIcon from '@mui/icons-material/Twitter';
+import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 function Footer(){
     return(
@@ -16,8 +17,20 @@ function Footer(){
                 </div>
                 <div className="row">
                 <div className="home_btns footer_btn">
-                    <button type="button" class="btn home_btn1"><SendIcon className="btn_icon"/> Download</button>
-                    <button type="button" class="btn home_btn2"><AppleIcon className="btn_icon"/> Download</button>
+                    {/* <button type="button" class="btn home_btn1"><SendIcon className="btn_icon"/> Download</button>
+                    <button type="button" class="btn home_btn2"><AppleIcon className="btn_icon"/> Download</button> */}
+
+                    <a href="https://play.google.com/store/apps/details?id=com.fivetime.greenvpn" target="_blank">
+                                    <button className="btn home_btn1" type="button">
+                                    <SendIcon className="btn_icon"/> Download
+                                    </button>
+                    </a>
+
+                    <a href="https://apps.apple.com/app/id1542123105" target="_blank">
+                                    <button className="btn home_btn2" type="button">
+                                    <AppleIcon className="btn_icon"/> Download
+                                    </button>
+                    </a>
                 </div>
                 </div>
                
@@ -33,27 +46,53 @@ function Footer(){
                     <div className="col-3">
                         <ul className="footer_links">
                             <li className="footer_link_heading">LEGAL</li>
-                            <li className="footer_li"><a href="#">Privacy Policy</a></li>
-                            <li className="footer_li"><a href="#">Terms & Conditions</a></li>
-                            <li className="footer_li"><a href="#">Report Abuse</a></li>
+                            <li className="footer_li"><NavLink to="/privacy"><a >Privacy Policy</a></NavLink></li>
+                            <li className="footer_li"><NavLink to="/terms"><a >Terms & Conditions</a></NavLink></li>
+                            <li className="footer_li"><NavLink to="/terms"><a >Report Abuse</a></NavLink></li>
+                            
                         </ul>
                     </div>
                     <div className="col-3">
                         <ul className="footer_links">
                             <li className="footer_link_heading">HELP</li>
-                            <li className="footer_li"><a href="#">Support Center</a></li>
-                            <li className="footer_li"><a href="#">FAQ</a></li>
-                            <li className="footer_li"><a href="#">Contact Us</a></li>
-                            <li className="footer_li"><a href="#">Testimonials</a></li>
+                            <li className="footer_li"><NavLink to="/support"><a>Support Center</a></NavLink></li>
+                            <li className="footer_li"><Link  to="faq" duration={50} smooth={true}>FAQ</Link></li>
+                            <li className="footer_li"><NavLink to="/support"><a>Contact Us</a></NavLink></li>
+                            <li className="footer_li"><Link  to="testimonials" duration={50} smooth={true}>Testimonials</Link></li>
                         </ul>
                     </div>
                         <div className="col-3">
                             <ul className="footer_links">
                                 <li className="footer_link_heading">FOLLOW US</li>
-                                <li><button href="#" className="footer_social"><FacebookIcon/> Facebook</button></li>
-                                <li><button href="#" className="footer_social"><InstagramIcon/> Instagram</button></li>
-                                <li><button href="#" className="footer_social"><YouTubeIcon/> Youtube</button></li>
+                        
+                                <li>
+                                    <a href="https://github.com/TechnoZech" target="_blank">
+                                    <button className="footer_social" ><FacebookIcon className="footer_social_icon"/>
+                                     Facebook
+                                    </button>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="https://github.com/TechnoZech" target="_blank">
+                                    <button className="footer_social" ><InstagramIcon className="footer_social_icon"/>
+                                     Instagram
+                                    </button>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://github.com/TechnoZech" target="_blank">
+                                    <button className="footer_social" ><YouTubeIcon className="footer_social_icon"/>
+                                     YouTube
+                                    </button>
+                                    </a>
+                                </li>
+                                
+                                
+                        
                             </ul>
+                            
                     </div>
                 </div>
 

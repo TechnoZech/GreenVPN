@@ -3,7 +3,7 @@ import {TwitterTweetEmbed} from 'react-twitter-embed';
 
 function Testimonials(){
     return(
-        <section className="Testimonials">
+        <section className="Testimonials" id="testimonials">
             <div className="container">
 
                 <div className="row">

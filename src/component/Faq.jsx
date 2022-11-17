@@ -3,7 +3,7 @@ import React from "react";
 function Faq(){
     return(
         <section>
-            <div className="container">
+            <div className="container" id="faq">
                 <div className="row">
                     <div>
                         <h1 className="faq_title">Frequently asked questions</h1>

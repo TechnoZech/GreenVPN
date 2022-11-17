@@ -7,7 +7,7 @@ function Support(){
     return(
         <div>
         <Navbar />
-            <div className="container">
+            <div className="container" id="support">
                 <div className="row support_row">
                     <div className="col-6">
                         <SupportAgentIcon className="SupportAgentIcon"/>

@@ -11,7 +11,9 @@ function Navbar(){
 
                         <nav className="navbar navbar-expand-lg navbar-light">
                         <div className="container-fluid">
+                        
                             <NavLink className="navbar-brand nav_brand" to="/"><ParkIcon className="brand_icon"/> GreenVPN</NavLink>
+
                                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span className="navbar-toggler-icon"></span>
                                 </button>
@@ -23,16 +25,18 @@ function Navbar(){
                                 </li>
 
                                 <li className="nav-item">
-                                {/* <NavLink  className="nav-link" to="features">Features</NavLink> */}
                                     <Link  className="nav-link" to="features" duration={50} smooth={true}>Features</Link>
                                 </li>
 
                                 <li className="nav-item">
-                                <NavLink  className="nav-link" to="#">Pricing</NavLink>
+                                <NavLink  className="nav-link" to="/price">Pricing</NavLink>
                                 </li>
                             </ul>
                             <form className="d-flex">
-                                <button className="btn btn-outline-success nav-btn" type="button" to="#"> Get Green </button>
+                                {/* <button className="btn btn-outline-success nav-btn" type="button" to="https://play.google.com/store/apps/details?id=com.fivetime.greenvpn"> Get Green </button>
+                                 */}
+                                 <button type="button" className="nav_btn_btn"><a class="btn btn-outline-success nav-btn" href="/price">Get Green</a></button>
+                            
                             </form>
                             </div>
                         </div>
